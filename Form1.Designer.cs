@@ -42,6 +42,8 @@ namespace ChangeBackgroundColorRunTime
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.panel1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -57,6 +59,7 @@ namespace ChangeBackgroundColorRunTime
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.Window;
+			this.panel1.Controls.Add(this.label4);
 			this.panel1.Location = new System.Drawing.Point(12, 12);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(159, 146);
@@ -174,6 +177,17 @@ namespace ChangeBackgroundColorRunTime
 			this.label3.TabIndex = 8;
 			this.label3.Text = "B";
 			// 
+			// label4
+			// 
+			this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+			this.label4.Location = new System.Drawing.Point(71, 67);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(16, 13);
+			this.label4.TabIndex = 7;
+			this.label4.Text = "R";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,6 +201,8 @@ namespace ChangeBackgroundColorRunTime
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -209,6 +225,7 @@ namespace ChangeBackgroundColorRunTime
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label4;
 	}
 }
 
