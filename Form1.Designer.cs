@@ -32,6 +32,7 @@ namespace ChangeBackgroundColorRunTime
 			this.components = new System.ComponentModel.Container();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label4 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.trackBar1 = new System.Windows.Forms.TrackBar();
 			this.trackBar2 = new System.Windows.Forms.TrackBar();
@@ -42,12 +43,14 @@ namespace ChangeBackgroundColorRunTime
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.label5 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// timer1
@@ -64,6 +67,17 @@ namespace ChangeBackgroundColorRunTime
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(159, 146);
 			this.panel1.TabIndex = 0;
+			// 
+			// label4
+			// 
+			this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+			this.label4.Location = new System.Drawing.Point(71, 67);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(16, 13);
+			this.label4.TabIndex = 7;
+			this.label4.Text = "R";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -177,16 +191,25 @@ namespace ChangeBackgroundColorRunTime
 			this.label3.TabIndex = 8;
 			this.label3.Text = "B";
 			// 
-			// label4
+			// panel2
 			// 
-			this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-			this.label4.Location = new System.Drawing.Point(71, 67);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(16, 13);
-			this.label4.TabIndex = 7;
-			this.label4.Text = "R";
+			this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel2.Controls.Add(this.label5);
+			this.panel2.Location = new System.Drawing.Point(12, 179);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(159, 146);
+			this.panel2.TabIndex = 0;
+			// 
+			// label5
+			// 
+			this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+			this.label5.Location = new System.Drawing.Point(71, 67);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(16, 13);
+			this.label5.TabIndex = 7;
+			this.label5.Text = "R";
 			// 
 			// Form1
 			// 
@@ -194,6 +217,7 @@ namespace ChangeBackgroundColorRunTime
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(611, 348);
 			this.Controls.Add(this.tableLayoutPanel1);
+			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -208,6 +232,8 @@ namespace ChangeBackgroundColorRunTime
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -226,6 +252,8 @@ namespace ChangeBackgroundColorRunTime
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label label5;
 	}
 }
 
