@@ -195,7 +195,7 @@ namespace ChangeBackgroundColorRunTime
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
 			this.panel2.Controls.Add(this.label5);
-			this.panel2.Location = new System.Drawing.Point(12, 179);
+			this.panel2.Location = new System.Drawing.Point(435, 190);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(159, 146);
 			this.panel2.TabIndex = 0;
